@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --primary-color: #182848;
+    --secondary-color: #4b6cb7;
+    --iced-color: #ABD1F3;
+    --blue-color: #003d80;
+    --gradient: linear-gradient(to right, #4b6cb7, #182848);
+    --white-gradient: linear-gradient(45deg, #dfe9f3, #ffffff);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--gradient);
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    color: var(--primary-color);
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background: var(--white-gradient);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px #000;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+p button {
+    border: none;
+    background: var(--primary-color);
+    color:#fff;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 50px;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p button:hover {
+    background: var(--secondary-color);
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.relogio {
+    font-size: 3em;
+    text-align: center;
+}
+
+.pausado {
+    color: var(--iced-color);
+}
+
+.pausadoBTN, .iniciadoBTN, .zeradoBTN {
+    background-color: var(--blue-color);
+}
+
+.pausadoBTN:hover, .iniciadoBTN:hover, .zeradoBTN:hover {
+    background-color: var(--secondary-color);
+}
+
+
+
+footer {
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    border-top: 3px dotted#fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
